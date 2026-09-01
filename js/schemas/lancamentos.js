@@ -1029,5 +1029,7 @@ export const SCHEMA_LANCAMENTOS = {
 // EXPORT DEFAULT
 // ============================================================
 
+export SCHEMA_LANCAMENTOS;
+
 export default SCHEMA_LANCAMENTOS;
 
