@@ -283,7 +283,7 @@ fields: [
                         "ativo",
 
                     label:
-                        "Ativo"
+                        "ATIVO"
                 },
                 
                 {
@@ -291,7 +291,7 @@ fields: [
                         "inativo",
 
                     label:
-                        "Inativo"
+                        "INATIVO"
                 },
 
                 {
@@ -299,7 +299,7 @@ fields: [
                         "ferias",
 
                     label:
-                        "Férias"
+                        "FÉRIAS"
                 },
 
 
@@ -308,7 +308,7 @@ fields: [
                         "viagem",
 
                     label:
-                        "Viagem"
+                        "VIAGEM"
                 },
 
 
