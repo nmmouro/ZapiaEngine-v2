@@ -127,10 +127,10 @@ fields: [
 
         {
             name:
-                "nome",
+                "empregado",
 
             label:
-                "Nome",
+                "Empregado",
 
             type:
                 "text",
