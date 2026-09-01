@@ -5,7 +5,7 @@ export function iniciar() {
     return iniciarAbastecimentos();
 }
 
-export function iniciarAbastecimentos() {
+export async function iniciarAbastecimentos() {
     const modulo = createModule({
         entity: "abastecimentos",
         schema: SCHEMA_ABASTECIMENTOS,
@@ -21,6 +21,9 @@ export function iniciarAbastecimentos() {
         }
     });
     window.abastecimentos = modulo;
+
+    await modulo.iniciar();
+
     return modulo;
 }
 

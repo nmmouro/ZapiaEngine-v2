@@ -5,7 +5,7 @@ export function iniciar() {
     return iniciarLancamentos();
 }
 
-export function iniciarLancamentos() {
+export async function iniciarLancamentos() {
     const modulo = createModule({
         entity: "lancamentos",
         schema: SCHEMA_LANCAMENTOS,
@@ -21,6 +21,9 @@ export function iniciarLancamentos() {
         }
     });
     window.lancamentos = modulo;
+
+    await modulo.iniciar();
+
     return modulo;
 }
 

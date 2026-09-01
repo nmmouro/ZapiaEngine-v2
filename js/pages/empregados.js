@@ -5,7 +5,7 @@ export function iniciar() {
     return iniciarEmpregados();
 }
 
-export function iniciarEmpregados() {
+export async function iniciarEmpregados() {
     const modulo = createModule({
         entity: "empregados",
         schema: SCHEMA_EMPREGADOS,
@@ -21,6 +21,9 @@ export function iniciarEmpregados() {
         }
     });
     window.empregados = modulo;
+
+    await modulo.iniciar();
+
     return modulo;
 }
 

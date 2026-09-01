@@ -30,7 +30,7 @@ import {
 // INICIALIZAÇÃO
 // ============================================================
 
-function iniciarVeiculos() {
+async function iniciarVeiculos() {
 
     console.log(
         "PÁGINA VEÍCULOS → INICIANDO"
@@ -129,6 +129,7 @@ function iniciarVeiculos() {
     window.veiculos =
         modulo;
 
+    await modulo.iniciar();
 
     console.log(
         "PÁGINA VEÍCULOS → MÓDULO CRIADO:",
