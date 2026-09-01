@@ -23,7 +23,7 @@ import { createModule } from "../engine/module.js";
 
 import {
     SCHEMA_VEICULOS
-} from "../engine/schema.js";
+} from "../schema/veiculos.js";
 
 
 // ============================================================
