@@ -1034,8 +1034,5 @@ export {
     SCHEMA_LANCAMENTOS
 };
 
-export default {
-    
-    SCHEMA_LANCAMENTOS
-};
+export default SCHEMA_LANCAMENTOS;
 
