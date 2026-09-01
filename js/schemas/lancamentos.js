@@ -953,7 +953,7 @@ export const SCHEMA_LANCAMENTOS = {
                 "localizacao_final",
 
             label:
-                "Localização Final",
+                "Localização final",
 
             type:
                 "text",
@@ -1036,4 +1036,3 @@ export {
 };
 
 export default SCHEMA_LANCAMENTOS;
-
