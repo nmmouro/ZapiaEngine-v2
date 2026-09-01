@@ -1,5 +1,5 @@
 import { createModule } from "../engine/module.js";
-import { SCHEMA_LANCAMENTOS } from "./schema.js";
+import { SCHEMA_LANCAMENTOS } from "./schema/lancamentos.js";
 
 export function iniciar() {
     return iniciarLancamentos();
