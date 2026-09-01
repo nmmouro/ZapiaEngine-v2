@@ -23,7 +23,7 @@ import { createModule } from "../engine/module.js";
 
 import {
     SCHEMA_LANCAMENTOS
-} from "../engine/schema.js";
+} from "../schemas/lancamentos.js";
 
 
 // ============================================================
