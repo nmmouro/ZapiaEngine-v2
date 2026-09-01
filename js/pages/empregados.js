@@ -1,5 +1,5 @@
 import { createModule } from "../engine/module.js";
-import { SCHEMA_EMPREGADOS } from "../schemas/empregados.js";
+import { SCHEMA_EMPREGADOS } from "../schema/empregados.js";
 
 export function iniciar() {
     return iniciarEmpregados();
