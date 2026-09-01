@@ -1,6 +1,35 @@
-import { SCHEMA_EMPREGADOS } from "../engine/schema.js";
+/**
+ * ============================================================
+ * SCHEMA — EMPREGADOS
+ * Painel Frota
+ * Arquivo: js/schemas/empregados.js
+ *
+ * Responsabilidade:
+ *
+ * - Definir os campos da tabela EMPREGADOS
+ * - Definir labels
+ * - Definir tipos
+ * - Definir campos visíveis na tabela
+ * - Definir campos editáveis
+ * - Definir campos obrigatórios
+ * - Definir opções dos campos SELECT
+ *
+ * Não possui:
+ *
+ * - CRUD
+ * - Supabase
+ * - PostgreSQL
+ * - HTML
+ * - Eventos
+ *
+ * ============================================================
+ */
 
-export { SCHEMA_EMPREGADOS };
+// ============================================================
+// SCHEMA EMPREGADOS
+// ============================================================
+
+export const SCHEMA_EMPREGADOS = {
 
 entity:
         "empregados",
@@ -12,6 +41,311 @@ entity:
 
     title:
         "Cadastro de Empregados",
-          
-          
+
+
+fields: [
+
+        // ----------------------------------------------------
+        // ID
+        // ----------------------------------------------------
+
+        {
+            name:
+                "id",
+
+            label:
+                "ID",
+
+            type:
+                "text",
+
+            visible:
+                false,
+
+            hidden:
+                true,
+
+            readonly:
+                true,
+
+            required:
+                false
+        },
+
+
+        // ----------------------------------------------------
+        // DATA DE CADASTRO
+        // ----------------------------------------------------
+
+        {
+            name:
+                "data_cadastro",
+
+            label:
+                "Data de Cadastro",
+
+            type:
+                "date",
+
+            required:
+                true,
+
+            visible:
+                true,
+
+            readonly:
+                false
+        },
+
+
+        // ----------------------------------------------------
+        // FOTO
+        // ----------------------------------------------------
+
+        {
+            name:
+                "foto",
+
+            label:
+                "Foto",
+
+            type:
+                "text",
+
+            required:
+                false,
+
+            visible:
+                true
+        },
+
+
+
+        // ----------------------------------------------------
+        // NOME
+        // ----------------------------------------------------
+
+        {
+            name:
+                "nome",
+
+            label:
+                "Nome",
+
+            type:
+                "text",
+
+            required:
+                true,
+
+            visible:
+                true,
+
+            maxlength:
+                10
+        },
+
+
+        // ----------------------------------------------------
+        // MATRÍCULA
+        // ----------------------------------------------------
+
+        {
+            name:
+                "matricula",
+
+            label:
+                "Matrícula",
+
+            type:
+                "text",
+
+            required:
+                true,
+
+            visible:
+                true
+        },
+
+
+        // ----------------------------------------------------
+        // DIRETORIA
+        // ----------------------------------------------------
+
+        {
+            name:
+                "diretoria",
+
+            label:
+                "Diretoria",
+
+            type:
+                "text",
+
+            required:
+                true,
+
+            visible:
+                true
+        },
+
+
+        // ----------------------------------------------------
+        // SETOR
+        // ----------------------------------------------------
+
+        {
+            name:
+                "setor",
+
+            label:
+                "Setor",
+
+            type:
+                "text",
+
+            required:
+                true,
+
+            visible:
+                true
+        },
+
+
+        // ----------------------------------------------------
+        // TELEFONE
+        // ----------------------------------------------------
+
+        {
+            name:
+                "telefone",
+
+            label:
+                "Telefone",
+
+            type:
+                "text",
+
+            required:
+                true,
+
+            visible:
+                true
+        },
+
+
+         // ----------------------------------------------------
+        // E-MAIL
+        // ----------------------------------------------------
+
+        {
+            name:
+                "e-mail",
+
+            label:
+                "E-mail",
+
+            type:
+                "text",
+
+            required:
+                true,
+
+            visible:
+                true
+        },
+
+
+        // ----------------------------------------------------
+        // STATUS
+        // ----------------------------------------------------
+
+        {
+            name:
+                "status",
+
+            label:
+                "Status",
+
+            type:
+                "select",
+
+            required:
+                true,
+
+            visible:
+                true,
+
+            options: [
+
+                {
+                    value:
+                        "ativo",
+
+                    label:
+                        "Ativo"
+                },
+                
+                {
+                    value:
+                        "inativo",
+
+                    label:
+                        "Inativo"
+                },
+
+                {
+                    value:
+                        "ferias",
+
+                    label:
+                        "Férias"
+                },
+
+
+                {
+                    value:
+                        "viagem",
+
+                    label:
+                        "Viagem"
+                },
+
+
+        // ----------------------------------------------------
+        // ATUALIZADO EM
+        // ----------------------------------------------------
+
+        {
+            name:
+                "atualizado_em",
+
+            label:
+                "Atualizado em",
+
+            type:
+                "datetime-local",
+
+            required:
+                false,
+
+            visible:
+                false,
+
+            hidden:
+                true,
+
+            readonly:
+                true
+        }
+
+            ]
+        };
+
+
+// ============================================================
+// EXPORT DEFAULT
+// ============================================================
+
+        
 export default SCHEMA_EMPREGADOS;
