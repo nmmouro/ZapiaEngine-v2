@@ -81,6 +81,56 @@ export const SCHEMA_LANCAMENTOS = {
 
 
         // ----------------------------------------------------
+        // ID EMPREGADO
+        // ----------------------------------------------------
+        
+        { 
+            name:
+                "id_empregado",
+         
+            label:
+                "ID Empregado",
+            
+            type:
+                "text",
+         
+            hidden:
+                true,
+
+            readonly:
+                true,
+
+            required:
+                false
+        
+        }, 
+        
+        // ----------------------------------------------------
+        // ID VEÍCULO
+        // ----------------------------------------------------
+        
+        { 
+            name:
+                "id_veiculo",
+            
+            label:
+                "ID Veículo",
+            
+            type:
+                "text",
+            
+            hidden:
+                true,
+
+            readonly:
+                true,
+
+            required:
+                false
+        },
+
+
+        // ----------------------------------------------------
         // DATA
         // ----------------------------------------------------
 
@@ -98,7 +148,10 @@ export const SCHEMA_LANCAMENTOS = {
                 true,
 
             visible:
-                true
+                true,
+
+            defaultValue:
+                () => new Date().toISOString().slice(0, 10)
         },
 
 
@@ -136,13 +189,27 @@ export const SCHEMA_LANCAMENTOS = {
                 "Empregado / Matrícula",
 
             type:
-                "text",
-
+                "select",
+            
             required:
                 true,
-
-            visible:
-                true
+            
+            source:
+                "empregados",
+            
+            valueField:
+                "id",
+            
+            labelFields:
+                [
+                    "empregado", "matricula"
+                ],
+            
+            idField:
+                "id_empregado",
+            
+            separator:
+                " / "
         },
 
 
@@ -158,13 +225,27 @@ export const SCHEMA_LANCAMENTOS = {
                 "Veículo",
 
             type:
-                "text",
-
+                "select",
+            
             required:
                 true,
-
-            visible:
-                true
+            
+            source:
+                "veiculos",
+            
+            valueField:
+                "id",
+            
+            labelFields:
+                [
+                    "placa", "modelo"
+                ],
+            
+            idField:
+                "id_veiculo",
+            
+            separator:
+                " - "
         },
 
 
@@ -216,42 +297,7 @@ export const SCHEMA_LANCAMENTOS = {
         // CHECKLIST
         // ----------------------------------------------------
 
-        {
-            name:
-                "checklist",
-
-            label:
-                "Checklist",
-
-            type:
-                "select",
-
-            required:
-                true,
-
-            visible:
-                true,
-
-            options: [
-
-                {
-                    value:
-                        "sim",
-
-                    label:
-                        "Sim"
-                },
-
-                {
-                    value:
-                        "nao",
-
-                    label:
-                        "Não"
-                }
-
-            ]
-        },
+        { name: "checklist", label: "Checklist", type: "checkbox" },
 
 
         // ----------------------------------------------------
