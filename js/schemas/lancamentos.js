@@ -501,8 +501,6 @@ export const SCHEMA_LANCAMENTOS = {
 // EXPORTS
 // ============================================================
 
-export {
-    SCHEMA_LANCAMENTOS
-};
+
 
 export default SCHEMA_LANCAMENTOS;
