@@ -546,6 +546,7 @@ export const SCHEMA_LANCAMENTOS = {
 
                     label:
                         "CHEIO"
+                    ]
                 },
 
 
@@ -1022,7 +1023,7 @@ export const SCHEMA_LANCAMENTOS = {
 
     ]
 
-}
+};
 
 
 // ============================================================
