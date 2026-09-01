@@ -15,7 +15,7 @@ const SCHEMA_VEICULOS = {
         { name: "ano", label: "Ano", type: "number" },
         { name: "cor", label: "Cor", type: "text" },
         { name: "combustivel", label: "Combustível", type: "select", options: ["GASOLINA", "ETANOL", "FLEX", "DIESEL", "ELÉTRICO"] },
-        { name: "km_inicial", label: "Km Inicial", type: "number" },
+        
         { name: "km_atual", label: "Km Atual", type: "number" },
         { name: "status", label: "Status", type: "select", options: ["ATIVO", "MANUTENÇÃO", "INATIVO"] },
         { name: "created_at", label: "Criado em", type: "datetime-local", hidden: true },
