@@ -33,7 +33,6 @@ const SCHEMA_EMPREGADOS = {
         { name: "diretoria", label: "Diretoria", type: "text" },
         { name: "setor", label: "Setor", type: "text" },
         { name: "usuario", label: "Usuário", type: "text" },
-        { name: "condicao", label: "Condição", type: "text" },
         { name: "status", label: "Status", type: "select", options: ["ATIVO", "FÉRIAS", "AFASTADO", "INATIVO"] },
         { name: "created_at", label: "Criado em", type: "datetime-local", hidden: true },
         { name: "updated_at", label: "Atualizado em", type: "datetime-local", hidden: true }
