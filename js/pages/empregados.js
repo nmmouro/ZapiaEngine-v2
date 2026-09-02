@@ -1,6 +1,8 @@
-
 import { createModule } from "../engine/module.js";
-import { SCHEMA_LANCAMENTOS } from "../schemas/lancamentos.js";
+
+import {
+    SCHEMA_VEICULOS
+} from "../schemas/veiculos.js";
 
 export function iniciar() {
     return iniciarEmpregados();
