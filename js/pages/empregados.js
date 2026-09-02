@@ -22,7 +22,7 @@
 import { createModule } from "../engine/module.js";
 
 import {
-    SCHEMA_VEICULOS
+    SCHEMA_EMPREGADOS
 } from "../schemas/empregados.js";
 
 
