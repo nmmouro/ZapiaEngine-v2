@@ -218,7 +218,7 @@ fields: [
 
         {
             name:
-                "telefone",
+                "tel",
 
             label:
                 "Telefone",
