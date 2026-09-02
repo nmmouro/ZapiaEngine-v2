@@ -249,7 +249,7 @@ fields: [
                 "text",
 
             required:
-                true,
+                false,
 
             visible:
                 true
