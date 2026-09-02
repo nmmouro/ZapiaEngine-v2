@@ -240,7 +240,7 @@ fields: [
 
         {
             name:
-                "e-mail",
+                "email",
 
             label:
                 "E-mail",
