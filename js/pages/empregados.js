@@ -23,7 +23,7 @@ import { createModule } from "../engine/module.js";
 
 import {
     SCHEMA_VEICULOS
-} from "../schemas/veiculos.js";
+} from "../schemas/empregados.js";
 
 
 // ============================================================
@@ -103,7 +103,7 @@ async function iniciarEmpregados() {
                     "Cadastro de Empregados",
 
                 tabela:
-                    "Veículos Cadastrados",
+                    "Empregados Cadastrados",
 
                 permitirNovo:
                     true,
